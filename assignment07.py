@@ -9,7 +9,6 @@
 # JPlemons, 5.28.2020, Created started script
 # JPlemons, 5.29.2020, Wrote the main body
 # JPlemons, 5.30.2020, Divided script into functions and separation of concerns
-#
 # ---------------------------------------------------------------------------- #
 
 import pickle
