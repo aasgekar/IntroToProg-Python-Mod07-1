@@ -88,15 +88,19 @@ Finally, in the Main Body of the Script is the Try/Except function.  There are t
 
 ### The Result
 Whether this program is run in PyCharm or Terminal, the same text file will be accessed and updated.  The program is first run in PyCharm to create the list and add the first player.
+
 ![](figures/figure77.png)
 
 Next in PyCharm the player’s last name is entered in the spot where the position number should be, raising the ValueError.
+
 ![](figures/figure78.png)
 
 The program is then run in Terminal to add another player and update the same file.
+
 ![](figures/figure79.png)
 
 The second error was raised in Terminal when 11 was entered instead of 1.
+
 ![](figures/figure710.png)
 
 The file is saved but is in binary and without a way to convert it to text is not readable by humans.  The text file does not display the binary 1s and 0s, and only the names of the players can be deciphered.
