@@ -5,7 +5,7 @@ This is a script that will allow a user to keep a wish list of players they hope
 This assignment is making use of the Pickle module and Try and Except blocks.
 
 ### Drafting the Script
-As will the past several assignments, this script is divided according to Separation of Concerns.  The sections include Data, Processing, Presentation, and the Main Body of the Script.  First in the processing section is an Exception class (figure 7.1) ![](https://github.com/jaytreelove/IntroToProg-Python-Mod07/blob/master/figures/figure71.png)
+As will the past several assignments, this script is divided according to Separation of Concerns.  The sections include Data, Processing, Presentation, and the Main Body of the Script.  First in the processing section is an Exception class (figure 7.1) ![](figures/figure71.png)
 
 The positions in Baseball are numbered 1 through 9.  A range function (figure 7.2) has been created to check if the user enters a number outside of 1 up to, but not including, 10.
 ![](https://github.com/jaytreelove/IntroToProg-Python-Mod07/blob/master/figures/figure72.png)
