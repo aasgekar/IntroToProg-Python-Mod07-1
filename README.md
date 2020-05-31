@@ -1,5 +1,12 @@
 ## Fantasy Baseball Wish List
 
+### Introdcution
+This is a script that will allow a user to keep a wish list of players they hope to draft for a Fantasy Baseball league.  The file will be stored as a Binary file on the hard drive.  While a binary file is not the same as an encrypted file, it will not be printed in plain text, so that if someone were to open the script, they would have difficulty in reading what is contained.
+This assignment is making use of the Pickle module and Try and Except blocks.
+
+### Drafting the Script
+As will the past several assignments, this script is divided according to Separation of Concerns.  The sections include Data, Processing, Presentation, and the Main Body of the Script.  First in the processing section is an Exception class (figure 7.1).  
+
 You can use the [editor on GitHub](https://github.com/jaytreelove/IntroToProg-Python-Mod07/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
