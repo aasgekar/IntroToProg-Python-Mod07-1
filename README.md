@@ -100,6 +100,7 @@ The second error was raised in Terminal when 11 was entered instead of 1.
 ![](figures/figure710.png)
 
 The file is saved but is in binary and without a way to convert it to text is not readable by humans.  The text file does not display the binary 1s and 0s, and only the names of the players can be deciphered.
+
 ![](figures/figure711.png)
 
 ### Conclusion
