@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Fantasy Baseball Wish List
 
 You can use the [editor on GitHub](https://github.com/jaytreelove/IntroToProg-Python-Mod07/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
