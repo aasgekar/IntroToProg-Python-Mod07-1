@@ -5,18 +5,43 @@ This is a script that will allow a user to keep a wish list of players they hope
 This assignment is making use of the Pickle module and Try and Except blocks.
 
 ### Drafting the Script
-As will the past several assignments, this script is divided according to Separation of Concerns.  The sections include Data, Processing, Presentation, and the Main Body of the Script.  First in the processing section is an Exception class (figure 7.1) ![](figures/figure71.png)
-
-The positions in Baseball are numbered 1 through 9.  A range function (figure 7.2) has been created to check if the user enters a number outside of 1 up to, but not including, 10.
-![](figures/figure72.png)
-
+As will the past several assignments, this script is divided according to Separation of Concerns.  The sections include Data, Processing, Presentation, and the Main Body of the Script.  First in the processing section is an Exception class.
+```
+class NoPosition(Exception):
+    """ Custom error for no position """
+    def __str__(self):
+        return "Not a playable position"
+    ```
+The positions in Baseball are numbered 1 through 9.  A range function has been created to check if the user enters a number outside of 1 up to, but not including, 10.
+```
+rngPositions = range(1, 10)
+```
 If the user enters an integer outside of this range, the exception is raised, and an error message is returned.  There is more detail about this and Try and Except in the Main Body of the Script.
 Next are two functions to create and read a binary file using Python’s Pickle module.  Pickling is one of three modules that Python uses for serialization.  This process can take a complex object structure and transform it so that it can be saved or sent over a network as a stream of bytes.  The Pickle module serializes and deserializes object in a binary format.  More about Pickling and the other serialization methods can be found on this article [The Python pickle Module: How to Persist Objects in Python (external link)](https://realpython.com/python-pickle-module/) from Real Python.
-First is the function to create or add to the file (figure 7.3).   This function is very similar to function used in early assignments with 2 differences.  First, when opening the file (line 36) instead of just an ‘a’ to append, ‘ab’ is used to append binary.  Also, the dump function (line 37) is what creates the file containing the serialization result.
-![](figures/figure73.png)
-
-The next function (figure 7.4) will then read the data.  This is done with ‘rb’ for Read Binary (line 46) and the load function (line 47).
-![](figures/figure74.png)
+First is the function to create or add to the file.   This function is very similar to function used in early assignments with 2 differences.  First, when opening the file instead of just an ‘a’ to append, ‘ab’ is used to append binary.  Also, the dump function is what creates the file containing the serialization result.
+```
+def save_roster_to_file(file_name, list_of_players):
+    """ create or add to file
+    :param file_name: FantasyTeam.dat
+    :param list_of_players: add to the list
+    """
+    file = open(file_name, "ab")
+    pickle.dump(list_of_players, file)
+    file.close()
+    ```
+The next function will then read the data.  This is done with ‘rb’ for Read Binary (line 46) and the load function (line 47).
+```
+def read_roster_from_file(file_name):
+    """ read the file
+    :param file_name: FantasyTeam.dat
+    :return: list_of_players
+    """
+    file = open(file_name, "rb")
+    list_of_players = pickle.load(file)
+    file.close()
+    return list_of_players
+    ```
+    
 
 Baseball positions are represented my numbers.  Pitcher is 1, Catcher is 2, and so on.   When the announcer calls a 6-4-3 Double Play, this is the Shortstop getting the ball, throwing to the Second baseman, then on to the First baseman for two outs. The next function (figure 7.5) will take the number the user enters and converts it to the player’s position for the purpose of printing to the screen to confirm to the user of their addition to the file.
 ![](figures/figure75.png)
