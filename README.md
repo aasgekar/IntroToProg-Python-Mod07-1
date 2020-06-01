@@ -241,3 +241,5 @@ while True:
     else:
         print("There are only 2 choices.  Let's try that again.")
 ```
+
+Thank you for viewing my code.  Let's connect on [LinkedIn](https://www.linkedin.com/in/jay-plemons-75544014/)
