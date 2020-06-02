@@ -97,20 +97,20 @@ Next in PyCharm the player’s last name is entered in the spot where the positi
 ![](figures/figure78.png)
     **Figure 7.2**
     
-The program is then run in Terminal (figure 7.2) to add another player and update the same file.
+The program is then run in Terminal (figure 7.3) to add another player and update the same file.
 
 ![](figures/figure79.png)
     **Figure 7.3**
     
-The second error was raised in Terminal (figure 7.3) when 11 was entered instead of 1.
+The second error was raised in Terminal (figure 7.4) when 11 was entered instead of 1.
 
 ![](figures/figure710.png)
-    **Figure 7.3**
+    **Figure 7.4**
     
-The file (figure 7.4) is saved but is in binary and without a way to convert it to text is not readable by humans.  The text file does not display the binary 1s and 0s, and only the names of the players can be deciphered.
+The file (figure 7.5) is saved but is in binary and without a way to convert it to text is not readable by humans.  The text file does not display the binary 1s and 0s, and only the names of the players can be deciphered.
 
 ![](figures/figure711.png)
-    **Figure 7.4**
+    **Figure 7.5**
     
 ### Conclusion
 This is script that will allow a user to type in names and position numbers of baseball players they hope to draft for their fantasy baseball team.  The file is ‘dumped’ as binary into a data file which is unreadable by humans.  However, this does not mean that it is secure.  For storing sensitive information, a stronger encryption tool should be used.
